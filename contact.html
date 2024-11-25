@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="header.png" alt="imagem-header" class="center">
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="characters.html"> Personagem</a></li>
+          <li><a href="episodes.html">Episódios</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="contact-form">
+      <div class="contact-form-content">
+        <h2>Entre em Contato</h2>
+        <form id="form" action="#" method="POST" onsubmit="return validateForm()">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="success-message" style="display: none; color: green; margin-top: 20px;">
+          Mensagem enviada com sucesso!
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Hellsing.</p>
+      <p>Desenvolvido por Caio Ferreira de Carvalho.</p>
+    </footer>
+  </body>
+</html>
